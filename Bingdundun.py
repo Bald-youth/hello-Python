@@ -1,4 +1,4 @@
-
+#此代码来源于互联网,开源免费。
 import turtle
 
 turtle.title('Python（冰墩墩）')
@@ -695,7 +695,5 @@ turtle.goto(-16, -160)
 turtle.write("BEIJING 2022", font=('Arial', 10, 'bold italic'))
 
 turtle.hideturtle()
-
-
-
 turtle.done()
+#此代码来源于互联网,开源免费。
