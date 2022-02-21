@@ -1,0 +1,68 @@
+什么是python？python官方网站：https://www.python.org/
+
+Python（计算机编程语言）
+Python由荷兰数学和计算机科学研究学会的吉多·范罗苏姆 于1990 年代初设计，作为一门叫做ABC语言的替代品。 [1]  Python提供了高效的高级数据结构，还能简单有效地面向对象编程。Python语法和动态类型，以及解释型语言的本质，使它成为多数平台上写脚本和快速开发应用的编程语言， [2]  随着版本的不断更新和语言新功能的添加，逐渐被用于独立的、大型项目的开发。 [3] 
+
+Python解释器易于扩展，可以使用C语言或C++（或者其他可以通过C调用的语言）扩展新的功能和数据类型。 [4]  Python 也可用于可定制化软件中的扩展程序语言。Python丰富的标准库，提供了适用于各个主要系统平台的源码或机器码。 [4] 
+
+2021年10月，语言流行指数的编译器Tiobe将Python加冕为最受欢迎的编程语言，20年来首次将其置于Java、C和JavaScript之上。 [16] 
+
+（以上来自于百度百科:https://baike.baidu.com/item/Python/407313?fr=aladdin）
+
+什么是pip？
+
+PIP（Python包管理工具）
+pip 是一个现代的，通用的 Python 包管理工具。提供了对 Python 包的查找、下载、安装、卸载的功能。（来自百度百科:https://baike.baidu.com/item/PIP/20435212?fr=aladdin）
+
+我们应该如何换源？
+
+Windows平台：
+
+打开电脑win+r 输入 %appdata% 新建文件夹为pip 在文件夹内新建pip.ini文件
+
+输入内容：
+
+[global]
+
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+
+其中蓝色部分的为国内镜像源网址，这里收集了国内的部分镜像网站：
+
+1.清华pypi 镜像使用帮助：https://pypi.tuna.tsinghua.edu.cn/simple
+
+2.中国科技大学：https://pypi.mirrors.ustc.edu.cn/simple/
+
+3.阿里巴巴开源镜像网站：https://mirrors.aliyun.com/pypi/
+
+4.豆瓣：https://pypi.doubanio.com/simple/
+
+5.华中科技大学源：https://pypi.hustunique.com/
+
+Linux平台下换pip源
+
+修改 ~/.pip/pip.conf (未找到的话就新建一个)
+
+输入内容：
+
+[global]
+
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+
+Mac平台下pip换源
+
+新建pip文件夹：mkdir ~/.pip
+
+vim .pip/pip.conf
+
+输入
+
+[global] index-url=http://mirrors.aliyun.com/pypi/simple/
+
+[install] trusted-host=mirrors.aliyun.com
+
+
+
+以上资料来源于互联网整合而成，谢谢大家的支持。知识值得传播，希望对你有所帮助。
+作者：哥不是鸽 https://www.bilibili.com/read/cv15244700?spm_id_from=333.999.0.0 出处：bilibili
