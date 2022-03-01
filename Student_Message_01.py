@@ -1,4 +1,4 @@
-#author:Sping
+#author : Sping
 def tip():
     print("[1]添加学生信息")
     print("[2]删除学生信息")
@@ -17,6 +17,7 @@ def add_message():
     #print(List_message)
 def del_message():
     i =0
+    stu_list()
     stu_id = int(input("请输入要删除对象的学号："))
     for item in List_message:
         i+=1;
@@ -24,8 +25,11 @@ def del_message():
             del List_message[i-1];
             print("已经成功删除目标！！！")
             print("-" * 30)
-            stu_list()
             break
+        else:
+            print("出错啦！！！")
+            print("-" * 30)
+    stu_list()
 def alter():
     if(len(List_message))>0:
         s_id = int(input("请输入学号："))
@@ -70,7 +74,7 @@ def query_message(stu_id):
         print("查询失败，当前数据库为空！！！")
         print("-" * 30)
 def stu_list():
-    if(len(List_message))>1:
+    if(len(List_message))>0:
         for item in List_message:
             #print(item)
             print("学号：%d\t姓名：%s\t性别：%s\t年龄：%d"
@@ -79,7 +83,7 @@ def stu_list():
             print("-"*30)
     else:
          print("当前数据库为空！！")
-    print("-" * 30)
+         print("-" * 30)
 
 if __name__ == '__main__':
     print("欢迎进入初代学生信息查询系统")
