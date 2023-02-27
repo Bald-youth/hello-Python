@@ -35,7 +35,7 @@ class baiduSpider:
     def save_data(self, data_list, tb):
         filename = tb + '.csv'
         # encoding='gbk' windows 使用'gbk' 否者会乱码，Linux等使用'utf-8'
-        with open(filename, 'w', encoding='gbk', newline='') as f:
+        with open(filename, 'w', encoding='utf-8', newline='') as f:
             writer = csv.writer(f)
             writer.writerow(['标题', '作者', '回复数', '创建时间', '内容'])
             for item in data_list:
